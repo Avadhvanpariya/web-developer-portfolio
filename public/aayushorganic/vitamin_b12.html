@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aayush Organic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/aayushorganic.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+
+    <link href="./lib/magiczoomplus/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="./lib/magiczoomplus/magiczoomplus.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/zoom.css">
+    <script type="text/javascript" src="/js/zoom.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3638112483131071');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=3638112483131071&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center" style="height: 45px;">
+            <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                <div class="d-flex flex-wrap">
+
+                    <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>
+                        +91 81418 81420</a>
+                    <a href="#" class="text-light me-0"><i
+                            class="fas fa-envelope text-primary me-2"></i>info@aayushorganic.com</a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-flex align-items-center justify-content-end">
+                    <a href="https://www.facebook.com/aayushorganics?mibextid=kFxxJD"
+                        class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/aayush_organic?t=f3x5GYS4IIDIN3I0HTu5RA&s=09"
+                        class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/aayush_organic?igsh=bGN5dG9xYjdsOTN3"
+                        class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vishal-dobariya-0a645176/"
+                        class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5" style="position: relative;">
+            <a href="#" class="navbar-brand p-0">
+                <img src="./img/aayushorganic.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#contect" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="mb-4">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row resip">
+                        <div class="col-lg-6">
+                            <div class="app-figure border" id="zoom-fig">
+                                <a id="Zoom-1" class="MagicZoom" href="./img/b12-product.jpg"
+                                    data-zoom-image-2x="./img/b12-product.jpg" data-image-2x="./img/b12-product.jpg">
+                                    <img class="lazy" data-src="./img/b12-product.jpg" srcset="./img/b12-product.jpg"
+                                        alt="" />
+                                </a>
+                                <div class="selectors">
+                                    <a data-zoom-id="Zoom-1" href="./img/b12-product.jpg"
+                                        data-image="./img/b12-product.jpg" data-zoom-image-2x="./img/b12-product.jpg"
+                                        data-image-2x="./img/b12-product.jpg">
+                                        <img srcset="./img/b12-product.jpg" src="./img/b12-product.jpg" />
+                                    </a>
+                                    <a data-zoom-id="Zoom-1" href="./img/b12-product-back.jpg"
+                                        data-image="./img/b12-product-back.jpg"
+                                        data-zoom-image-2x="./img/b12-product-back.jpg"
+                                        data-image-2x="./img/b12-product-back.jpg">
+                                        <img srcset="./img/b12-product-back.jpg" src="./img/b12-product-back.jpg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 w">
+                            <div class="tabata d-inline-block">
+                                <h1>बी12 पाउडर</h1>
+                            </div>
+                            <div class="d-inline-block float-right resi">
+                                <a href="javascript:void(0);" class="mr-2"><img class="lazy"
+                                        data-src="../images/img/not-bookmarked.svg" width="20px"></a>
+                                <a href="javascript:void(0);" onclick="share()"><img class="lazy"
+                                        data-src="../images/img/share.svg" width="20px"></a>
+                            </div>
+                            <div class="mt-2 mb-3 meal">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                            <div class="tabata d-inline-block">
+                                <p>WEIGHT : 250gm</p>
+                            </div>
+                            <div class="blog2 mt-3">
+                                <form class="product-from" id="productForm">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group mb-3">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control" placeholder="Enter name"
+                                                    id="txt_name">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group mb-3">
+                                                <label>Mobile no.</label>
+                                                <input type="number" class="form-control" placeholder="Enter Mobile no."
+                                                    id="txt_mobile">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group mb-3">
+                                                <label>Email</label>
+                                                <input type="text" class="form-control" placeholder="Enter Mobile no."
+                                                    id="txt_email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group mb-3">
+                                                <label>Plot/Flat No.</label>
+                                                <input type="text" class="form-control" placeholder="Enter Address"
+                                                    id="txt_address">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group mb-3">
+                                                <label>Street/Colony</label>
+                                                <input type="text" class="form-control" placeholder="Enter Address"
+                                                    id="txt_address_2">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group mb-3">
+                                                <label>City</label>
+                                                <input type="text" class="form-control" placeholder="Enter City"
+                                                    id="txt_city">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group mb-3">
+                                                <label>Pincode</label>
+                                                <input type="number" class="form-control" placeholder="Enter Pincode"
+                                                    id="txt_pincode" maxlength="6">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group mb-3">
+                                                <label for="paymentMethod">Payment Method</label>
+                                                <select class="form-control" id="paymentMethod"
+                                                    onchange="updateTotalPrice()">
+                                                    <option value="Prepaid" selected>Prepaid</option>
+                                                    <option value="COD">Cash on Delivery</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-7">
+                                            <div class="price mt-4 ml-lg-5">
+                                                <p class="my-3">₹<span id="product_price">999</span>/-</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-5">
+                                            <div class="meal">
+                                                <p class="my-3">Quantity:</p>
+                                                <i class="fas fa-minus mr-2 text-dark mr-3"
+                                                    onclick="decrementQuantity()"></i>
+                                                <input type="number" id="txt_quantity" value="1" min="1" readonly>
+                                                <i class="fas fa-plus ml-2 text-dark ml-3"
+                                                    onclick="incrementQuantity()"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="btn btn-primary text-white py-2 px-4">Buy
+                                            Now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="section-title mb-3 mt-5">
+                            <h4 class="px-3 mb-0" style="font-size: 40px;">Description</h4>
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="lazy" src="./img/b12-product.jpg" width="100%" style="margin-top: 45px;">
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="Info">
+                                <h2>में प्रमुख लाभ</h2>
+                            </div>
+                            <div class="Grocery1">
+                                <ul>
+                                    <li>
+                                        शरीर में कमजोरी
+                                    </li>
+                                    <li>
+                                        हाथों और पैरों में झुनझुनी महसूस होना
+                                    </li>
+                                    <li>
+                                        पैरों में भारी दर्द
+                                    </li>
+                                    <li>
+                                        धुंधली नज़र
+                                    </li>
+                                    <li>
+                                        स्मरण शक्ति में कमी
+                                    </li>
+                                    <li>
+                                        कमजोर मांसपेशियाँ
+                                    </li>
+                                    <li>
+                                        पाचन तंत्र को मजबूत बनाता है
+                                    </li>
+                                    <li>
+                                        जोड़ों का दर्द
+                                    </li>
+                                    <li>
+                                        मनोदशा में बदलाव
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 ml-4">
+                            <div class="Info">
+                                <h2>सामग्री </h2>
+                            </div>
+                            <div class="Grocery1">
+                                <ul>
+                                    <li>
+                                        बी12 पाउडर समुद्री शैवाल, स्पिरुलिना, स्टीविया की पत्तियां, अल्फाल्फा की
+                                        पत्तियां, मोरिंगा, गेहूं घास, हरा आंवला, चुकंदर, आदि जैसे पौधों पर आधारित पाउडर
+                                        का मिश्रण है।
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Info">
+                                <h2>उपयोग कैसे करें </h2>
+                            </div>
+                            <div class="Grocery1">
+                                <ul>
+                                    <li>
+                                        अधिकतम अवशोषण और बेहतर परिणामों के लिए एक बड़ा चम्मच (5 ग्राम) सामान्य पानी में
+                                        मिलाएं और इसे रोजाना सुबह खाली पेट दिन में एक बार पियें।
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="section-title mb-3">
+                    <h4 class="px-3 mb-0" style="font-size: 40px;">Certificate</h4>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="blog2">
+                            <img src="./img/organic.jpg" alt="Certificate" width="100%">
+                            <div class="col-12">
+                                <a href="./img/pdf/ORGANIC-Aayush-Organic.pdf" download=""
+                                    class="btn btn-primary text-white w-100 mt-1 py-2 px-2">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog2">
+                            <img src="./img/fssai.jpg" alt="Certificate" width="100%">
+                            <a href="./img/pdf/FSSAI-Aayush-Organic.pdf" download=""
+                                class="btn btn-primary text-white w-100 mt-1 py-2 px-2">Download</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog2">
+                            <img src="./img/apeda.jpg" alt="Certificate" width="100%">
+                            <a href="./img/pdf/APEDA-CERTIFICATE-AAYUSH-ORGANIC.pdf" download=""
+                                class="btn btn-primary text-white w-100 mt-1 py-2 px-2">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid testimonial py-5 ">
+            <div class="container py-5">
+                <div class="section-title mb-5">
+                    <div class="sub-style">
+                        <h4 class="sub-title text-white px-3 mb-0">गुणों का वर्ण-पत्र</h4>
+                    </div>
+                    <h1 class="display-3 mb-4">ग्राहक क्या कहते हैं</h1>
+                </div>
+                <div class="testimonial-carousel owl-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-inner p-5">
+                            <div class="testimonial-inner-img mb-4">
+                                <img src="img/unnamed.png" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <p class="text-white fs-7">वास्तव में अद्भुत और मूल्यवान उत्पाद। स्वच्छता उत्तम है, गुणवत्ता
+                                सर्वोत्तम है।
+                            </p>
+                            <div class="text-center">
+                                <h5 class="mb-2">विशाल लांगलिया</h5>
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-inner p-5">
+                            <div class="testimonial-inner-img mb-4">
+                                <img src="img/unnamed1.png" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <p class="text-white fs-7">सभी उत्पाद बहुत ताज़ा हैं
+                            </p>
+                            <div class="text-center">
+                                <h5 class="mb-2">
+                                    राजकुमार त्रिवेदी</h5>
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-inner p-5">
+                            <div class="testimonial-inner-img mb-4">
+                                <img src="img/unnamed2.png" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <p class="text-white fs-7">सर्वोच्च गुणवत्ता वाले आयुर्वेदिक पाउडर और जैविक उत्पादों की
+                                व्यापक
+                                विविधता उपलब्ध है। अच्छी सेवा और भरोसेमंद 👍👌
+                            </p>
+                            <div class="text-center">
+                                <h5 class="mb-2">
+                                    प्रीत उकानी</h5>
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-inner p-5">
+                            <div class="testimonial-inner-img mb-4">
+                                <img src="img/unnamed3.png" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <p class="text-white fs-7">हम आयुष ऑर्गेनिक ऑल हर्ब्स एक्सपोर्ट क्वालिटी ऑल ऑर्गेनिक की सलाह
+                                देते हैं। उत्पाद और जड़ी-बूटियों की विशाल श्रृंखला, धन्यवाद श्री विशालभाई
+                            </p>
+                            <div class="text-center">
+                                <h5 class="mb-2">
+                                    अवंतिका ऑर्गेनिक्स</h5>
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-inner p-5">
+                            <div class="testimonial-inner-img mb-4">
+                                <img src="img/unnamed5.png" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <p class="text-white fs-7">मैं पिछले 3 महीनों से आयुष ऑर्गेनिक उत्पादों का उपयोग कर रहा हूं।
+                                इससे मुझे मेरी त्वचा, गर्म स्थानों और पेट में जबरदस्त लाभ हुआ है।
+                            </p>
+                            <div class="text-center">
+                                <h5 class="mb-2">
+                                    मनीष वाघेला </h5>
+                                <div class="d-flex justify-content-center">
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid about bg-light py-5 pb-0" id="about">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 Left">
+                        <div class="about-img">
+                            <div class="video h-100">
+                                <img src="img/diabitis-product.jpg" class="img-fluid rounded w-100"
+                                    style="object-fit: cover;" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 Right" data-wow-delay="0.4s">
+                        <div class="section-title text-start mb-5">
+                            <h4 class="sub-title pe-3 mb-0 d-none">Diabetes</h4>
+                            <h4 class="sub-title pe-3 mb-0">डायबिटीज़</h4>
+                            <h1 class="display-3 mb-4 d-none">Diabetes Management the Ayurvedic Way </h1>
+                            <h1 class="display-3 mb-4">आयुर्वेदिक तरीके से डायबिटीज़ प्रबंधन</h1>
+                            <p class="mb-4 d-none">Discover the ancient wisdom of Ayurveda in managing Diabetes. Our
+                                holistic
+                                approach focuses on dietary adjustments, herbal remedies, and lifestyle changes to
+                                regulate
+                                blood sugar levels, improve insulin sensitivity, and enhance overall well-being.
+                                Ayurveda
+                                sees Diabetes not just as a sugar imbalance but as an opportunity for holistic healing
+                                and
+                                rejuvenation.</p>
+                            <p class="mb-4">डायबिटीज़ के प्रबंधन में आयुर्वेद के प्राचीन ज्ञान की खोज करें। हमारा समग्र
+                                दृष्टिकोण रक्त शर्करा के स्तर को नियंत्रित करने, इंसुलिन संवेदनशीलता में सुधार करने और
+                                समग्र
+                                कल्याण को बढ़ाने के लिए आहार समायोजन, हर्बल उपचार और जीवनशैली में बदलाव पर केंद्रित है।
+                                आयुर्वेद डायबिटीज़ को केवल शर्करा असंतुलन के रूप में नहीं बल्कि समग्र उपचार और कायाकल्प
+                                के
+                                अवसर के रूप में देखता है</p>
+                            <div class="mb-4 d-none">
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Ayurveda offers
+                                    a
+                                    holistic approach to managing diabetes</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i>
+                                    Ayurveda tailors diets to individual doshas and imbalances.</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Ayurveda
+                                    combines
+                                    diet, herbs, and lifestyle for managing diabetes.</p>
+                            </div>
+                            <div class="mb-4">
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> आयुर्वेद
+                                    डायबिटीज़
+                                    के प्रबंधन के लिए एक समग्र दृष्टिकोण प्रदान करता है</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i>
+                                    आयुर्वेद व्यक्तिगत दोषों और असंतुलन के अनुसार आहार तैयार करता है</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> आयुर्वेद
+                                    डायबिटीज़
+                                    के प्रबंधन के लिए आहार, जड़ी-बूटियों और जीवनशैली को जोड़ता है</p>
+                            </div>
+                            <div class="d-flex">
+                                <a href="./diabetes.html" class="btn btn-primary rounded-pill text-white py-3 px-5">अभी
+                                    खरीदें </a>
+                                <a style="margin-left: 10px;" href="https://youtu.be/hw9ETot8pqE" data-fancybox
+                                    class="btn video-btn"><i class="fas fa-play"
+                                        style="color: #23767f;font-size: 18px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 ">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item d-flex flex-column">
+                            <img src="./img/aayushorganic.png" alt="logo" width="60%" />
+                            <p>Aayush Organic is Manufacturers of Herbal Medicine, Vegetables and Fruit Powders and
+                                Herbal
+                                Extracts.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1"
+                                    href="https://www.facebook.com/aayushorganics?mibextid=kFxxJD"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1"
+                                    href="https://x.com/aayush_organic?t=f3x5GYS4IIDIN3I0HTu5RA&s=09"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1"
+                                    href="https://www.instagram.com/aayush_organic?igsh=bGN5dG9xYjdsOTN3"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1"
+                                    href="https://www.linkedin.com/in/vishal-dobariya-0a645176/"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Quick Links</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                            <a href="refund-policy.html"><i class="fas fa-angle-right me-2"></i> Refund Policy</a>
+                            <a href="shipping-policy.html"><i class="fas fa-angle-right me-2"></i> Shipping Policy</a>
+                            <a href="terms-and-conditions.html"><i class="fas fa-angle-right me-2"></i> Terms &
+                                Conditions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i>Plot No 190 | Sahitya Industrial Hub |
+                                Bakrol-Gatrad Road | Bakrol-Bujrang Ahmedabad |
+                                Gujarat | India | Pin Code: 382430</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i>info@aayushorganic.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i>
+                                +91 81418 81420</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Aayush
+                                Organic</a>,
+                            All
+                            right
+                            reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        Designed By <a class="border-bottom"
+                            href="https://gcsconsultant.com/digital-marketing-agency.html">Fitit Offical</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+        <!-- Include SweetAlert2 library -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <!-- Include EmailJS library -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Fancybox JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script>
+            function updateTotalPrice() {
+                var quantity = parseInt(document.getElementById('txt_quantity').value);
+                var pricePerItem;
+                var paymentMethod = document.getElementById('paymentMethod').value;
+
+                if (paymentMethod === 'COD') {
+                    pricePerItem = 999;
+                } else {
+                    pricePerItem = 850;
+                }
+
+                var totalPrice = quantity * pricePerItem;
+                document.getElementById('product_price').innerText = totalPrice;
+            }
+
+            updateTotalPrice();
+
+            function incrementQuantity() {
+                var quantityInput = document.getElementById('txt_quantity');
+                var quantity = parseInt(quantityInput.value);
+                if (quantity < 10) {
+                    quantityInput.value = quantity + 1;
+                    updateTotalPrice();
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Maximum quantity reached!',
+                    });
+                }
+            }
+
+            function decrementQuantity() {
+                var quantityInput = document.getElementById('txt_quantity');
+                var quantity = parseInt(quantityInput.value);
+                if (quantity > 1) {
+                    quantityInput.value = quantity - 1;
+                    updateTotalPrice();
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Minimum quantity reached!',
+                    });
+                }
+            }
+        </script>
+        <script>
+            const handleSubmit = async (event) => {
+                event.preventDefault();
+
+                // Generate a unique transaction ID
+                const transactionId = generateRandomId();
+                const userId = generateRandomId();
+
+                const formData = {
+                    transactionId: transactionId,
+                    user_id: userId,
+                    name: document.getElementById('txt_name').value,
+                    mobile: document.getElementById('txt_mobile').value,
+                    email: document.getElementById('txt_email').value,
+                    address_line_1: document.getElementById('txt_address').value,
+                    address_line_2: document.getElementById('txt_address_2').value,
+                    city: document.getElementById('txt_city').value,
+                    pincode: document.getElementById('txt_pincode').value,
+                    quantity: document.getElementById('txt_quantity').value,
+                    product_name: 'B12 Powder',
+                    product_id: 'B12POWDER',
+                    total_amount: document.getElementById('product_price').innerText,
+                    method: document.getElementById('paymentMethod').value
+                };
+
+                try {
+                    const response = await axios.post('https://admin.aayushorganics.com/create-payment', formData);
+                    // const response = await axios.post('http://localhost:5000/create-payment', formData);
+                    console.log(response)
+                    if (response.data.data.redirectUrl) {
+                        window.location.href = response.data.data.redirectUrl;
+                    } else if (response.data.data && response.data.data.method == "COD") {
+                        window.location.href = `/thank-you-purchase.html?transactionId=${response.data.data.transactionId}`;
+                    } else {
+                        console.error('Redirect URL not found in the response.');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            };
+
+            document.getElementById('productForm').addEventListener('submit', handleSubmit);
+
+            function generateRandomId() {
+                const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                let randomId = '';
+                for (let i = 0; i < 10; i++) {
+                    randomId += characters.charAt(Math.floor(Math.random() * characters.length));
+                }
+                return randomId;
+            }
+
+        </script>
+
+</body>
+
+</html>
