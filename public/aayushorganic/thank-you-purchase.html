@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you page</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./css/thank-you.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3638112483131071');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=3638112483131071&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <div class=content>
+        <div class="wrapper-1">
+            <div class="wrapper-2">
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark" style="display: none;">
+        <div class="payment-loader">
+            <div class="pad">
+                <div class="chip"></div>
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+            </div>
+            <div class="loader-text">
+                Please wait while payment is loading
+            </div>
+        </div>
+    </div>
+    <!-- Include SweetAlert2 library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Include EmailJS library -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        function getTransactionIdFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('transactionId');
+        }
+
+        const checkPaymentStatus = async (transactionId) => {
+            try {
+                // const response = await axios.get(`http://localhost:5000/get-payment-status?transactionId=${transactionId}`);
+                const response = await axios.get(`https://admin.aayushorganics.com/get-payment-status?transactionId=${transactionId}`);
+                return response.data;
+            } catch (error) {
+                console.error('Error checking payment status:', error);
+                return { status: 'error' };
+            }
+        };
+
+
+        const showPaymentLoader = () => {
+            document.querySelector('.bg-dark').style.display = 'block';
+        };
+
+        const hidePaymentLoader = () => {
+            document.querySelector('.bg-dark').style.display = 'none';
+        };
+
+        const showSuccessMessage = () => {
+            document.querySelector('.wrapper-2').innerHTML = `
+        <div class="success-animation">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+            </svg>
+        </div>
+        <h1 style="margin-top: 15px;">Thank you for Purchase!</h1>
+        <p style="margin-bottom: 10px;">You will shortly receive a call from our team.</p>
+        <p style="margin-bottom: 30px; font-size: 18px;">For any queries, you can call or WhatsApp on this number. <a href="tel:+918141881420">+91 8141881420</a></p>
+        <a class="go-home" href="/">Go Home</a>
+    `;
+        };
+
+        const showErrorMessage = () => {
+            document.querySelector('.wrapper-2').innerHTML = `
+        <h1 style="margin-top: 15px; color: red">Payment Failed!</h1>
+        <p style="margin-bottom: 10px;">Your payment was unsuccessful.</p>
+        <p style="margin-bottom: 30px; font-size: 18px;">Please try again later or contact customer support.</p>
+        <a class="go-home" href="/">Go Home</a>
+    `;
+        };
+
+        const handleFormSubmission = async () => {
+            const transactionId = getTransactionIdFromUrl();
+            if (!transactionId) {
+                console.error('Transaction ID not found in URL parameters.');
+                return;
+            }
+
+            showPaymentLoader();
+
+            const paymentStatus = await checkPaymentStatus(transactionId);
+
+            hidePaymentLoader();
+
+            if (paymentStatus && paymentStatus.status === 'Payment success') {
+                showSuccessMessage();
+            } else if (paymentStatus && paymentStatus.status === 'COD Successfully') {
+                showSuccessMessage();
+            } else if (paymentStatus && paymentStatus.status === 'Order already successful') {
+                showSuccessMessage();
+            } else {
+                showErrorMessage();
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            handleFormSubmission();
+        });
+
+    </script>
+</body>
+
+</html>
